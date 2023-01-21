@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Secret Number</title>
+
+</head>
+<body>
+    <h1>Hit the secret number</h1>
+    
+    <h3>Secret number is between
+        <span id="smaller-value">{{smaller-value}}</span>
+        and
+        <span id="bigger-value">{{bigger-value}}</span>
+    </h3>
+    
+    <div>
+        <div>You said:</div>
+        <span id="box" class="box">?</span>
+
+        <div class="message">
+            <i id="icon-error"></i>
+            <span id="message"></span>
+            <i id="icon"></i>
+        </div>
+        
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/webSpeechApi.js"></script>
+    <script src="js/validators.js"></script>
+</body>
+</html>
